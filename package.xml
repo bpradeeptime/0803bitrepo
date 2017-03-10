@@ -1,5 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>MyClass090312</members>
+        <members>MyClass0908</members>
+        <members>MyNewClass</members>
+        <members>class0903</members>
+        <members>test0803class</members>
+        <members>test10903</members>
+        <name>ApexClass</name>
+    </types>
     <types>
         <members>AppSwitcher</members>
         <members>Salesforce1</members>
@@ -44,6 +52,7 @@
     </types>
     <types>
         <members>Account.Active__c</members>
+        <members>Account.AutorabitExtId__c</members>
         <members>Account.CustomerPriority__c</members>
         <members>Account.NumberofLocations__c</members>
         <members>Account.SLAExpirationDate__c</members>
@@ -56,6 +65,9 @@
         <members>Case.SLAViolation__c</members>
         <members>Contact.Languages__c</members>
         <members>Contact.Level__c</members>
+        <members>Customer_Success_Table__c.CUST_CITY__c</members>
+        <members>Customer_Success_Table__c.Client_Name__c</members>
+        <members>Customer_Success_Table__c.triger_field__c</members>
         <members>Goal.OrigGoalId__c</members>
         <members>Lead.CurrentGenerators__c</members>
         <members>Lead.NumberofLocations__c</members>
@@ -68,6 +80,17 @@
         <members>Opportunity.MainCompetitors__c</members>
         <members>Opportunity.OrderNumber__c</members>
         <members>Opportunity.TrackingNumber__c</members>
+        <members>UniqueTest__c.UniqueField__c</members>
+        <members>agents__c.AutorabitExtId__c</members>
+        <members>customer__c.AutorabitExtId__c</members>
+        <members>customer__c.newUnique__c</members>
+        <members>orders__c.AutorabitExtId__c</members>
+        <members>retriveobject__c.test1__c</members>
+        <members>retriveobject__c.test2__c</members>
+        <members>retriveobject__c.test3__c</members>
+        <members>retriveobject__c.test__c</members>
+        <members>test__c.missinglabel__c</members>
+        <members>test__c.testname__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -90,6 +113,7 @@
         <members>ContentVersion</members>
         <members>Contract</members>
         <members>ContractContactRole</members>
+        <members>Customer_Success_Table__c</members>
         <members>DandBCompany</members>
         <members>DuplicateRecordItem</members>
         <members>DuplicateRecordSet</members>
@@ -119,9 +143,17 @@
         <members>Solution</members>
         <members>StreamingChannel</members>
         <members>Task</members>
+        <members>UniqueTest__c</members>
         <members>User</members>
         <members>UserProvisioningRequest</members>
+        <members>X0903__c</members>
+        <members>retriveobject__c</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Customer_Success_Table__c</members>
+        <members>UniqueTest__c</members>
+        <name>CustomTab</name>
     </types>
     <types>
         <members>unfiled$public</members>
@@ -163,6 +195,7 @@
         <members>Contact-Contact Layout</members>
         <members>ContentVersion-Content Version Layout</members>
         <members>Contract-Contract Layout</members>
+        <members>Customer_Success_Table__c-Customer_Success_Table Layout</members>
         <members>DandBCompany-D%26B Company Layout</members>
         <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
         <members>EmailMessage-Email Message Layout</members>
@@ -186,10 +219,15 @@
         <members>Product2-Product Layout</members>
         <members>Solution-Solution Layout</members>
         <members>Task-Task Layout</members>
+        <members>UniqueTest__c-UniqueTest Layout</members>
         <members>User-User Layout</members>
         <members>UserProvAccount-User Provisioning Account Layout</members>
         <members>UserProvisioningLog-User Provisioning Log Layout</members>
         <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+        <members>X0903__c-0903 Layout</members>
+        <members>customer__c-customer Layout</members>
+        <members>retriveobject__c-retriveobject Layout</members>
+        <members>test__c-test Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -221,6 +259,7 @@
         <members>Contract.MyActivatedContracts</members>
         <members>Contract.MyDraftContracts</members>
         <members>Contract.MyInApprovalContracts</members>
+        <members>Customer_Success_Table__c.All</members>
         <members>Lead.AllOpenLeads</members>
         <members>Lead.MyUnreadLeads</members>
         <members>Lead.TodaysLeads</members>
@@ -238,9 +277,11 @@
         <members>Order.AllActivatedOrders</members>
         <members>Order.AllDraftOrders</members>
         <members>Order.AllOrders</members>
+        <members>Pradeep_Address__c.All</members>
         <members>Product2.AllProducts</members>
         <members>Solution.AllReviewedSolutions</members>
         <members>Solution.AllUnreviewedSolutions</members>
+        <members>UniqueTest__c.All</members>
         <members>User.ActiveUsers</members>
         <members>User.AdminUsers</members>
         <members>User.AllUsers</members>
@@ -361,6 +402,41 @@
         <name>Role</name>
     </types>
     <types>
+        <members>Account</members>
+        <members>Activities</members>
+        <members>Address</members>
+        <members>BusinessHours</members>
+        <members>Case</members>
+        <members>Company</members>
+        <members>Contract</members>
+        <members>Entitlement</members>
+        <members>FileUploadAndDownloadSecurity</members>
+        <members>Forecasting</members>
+        <members>Ideas</members>
+        <members>Knowledge</members>
+        <members>LiveAgent</members>
+        <members>Macro</members>
+        <members>Mobile</members>
+        <members>Name</members>
+        <members>Opportunity</members>
+        <members>Order</members>
+        <members>OrgPreference</members>
+        <members>PathAssistant</members>
+        <members>PersonalJourney</members>
+        <members>Product</members>
+        <members>Quote</members>
+        <members>Search</members>
+        <members>Security</members>
+        <name>Settings</name>
+    </types>
+    <types>
+        <members>Customer_Success_Table__c</members>
+        <members>UniqueTest__c</members>
+        <members>X0903__c</members>
+        <members>retriveobject__c</members>
+        <name>SharingRules</name>
+    </types>
+    <types>
         <members>AccountContactMultiRoles</members>
         <members>AccountContactRole</members>
         <members>AccountOwnership</members>
@@ -421,39 +497,15 @@
         <name>StandardValueSet</name>
     </types>
     <types>
+        <members>Customer_Success_Table__c.CUST_CITY_c_rule</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
         <members>Account.Billing</members>
         <members>Campaign.ViewCampaignInfluenceReport</members>
         <members>Case.UpsellCrosssellOpportunity</members>
         <members>Opportunity.DeliveryStatus</members>
         <name>WebLink</name>
-    </types>
-    <types>
-        <members>Account</members>
-        <members>Activities</members>
-        <members>Address</members>
-        <members>BusinessHours</members>
-        <members>Case</members>
-        <members>Company</members>
-        <members>Contract</members>
-        <members>Entitlement</members>
-        <members>FileUploadAndDownloadSecurity</members>
-        <members>Forecasting</members>
-        <members>Ideas</members>
-        <members>Knowledge</members>
-        <members>LiveAgent</members>
-        <members>Macro</members>
-        <members>Mobile</members>
-        <members>Name</members>
-        <members>Opportunity</members>
-        <members>Order</members>
-        <members>OrgPreference</members>
-        <members>PathAssistant</members>
-        <members>PersonalJourney</members>
-        <members>Product</members>
-        <members>Quote</members>
-        <members>Search</members>
-        <members>Security</members>
-        <name>Settings</name>
     </types>
     <version>39.0</version>
 </Package>
